@@ -4,6 +4,9 @@ body{
     background-color: aliceblue;
     font-family: Arial, Helvetica, sans-serif;
 }
+.container{
+    max-height:100vh;
+}
 
 .weatherform{
     margin:20px;
@@ -77,4 +80,30 @@ button{
     font-weight: bold;
     margin-top: -1px;
     color:hsla(0,0%,0%,0.75);
+}
+
+@media(max-width:540px)
+{
+
+     .weatherform{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cityinput{
+        margin:20% 4.5%;
+        height:30px;
+        width:400px;
+        text-align: center;
+        
+    } 
+    button{
+   
+         position: absolute;
+         top:17.5%;
+         padding:15px 25px;
+    
+        
+    }
+     
 }
